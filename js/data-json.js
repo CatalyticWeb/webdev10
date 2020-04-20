@@ -2,6 +2,11 @@
 // You will not get a server status
 // You can comment out lines 9 and 26 to make it work locally
 
+//adding new json pull data below.
+
+
+
+
 var xhr = new XMLHttpRequest();                 // Create XMLHttpRequest object
 
 xhr.onload = function() {                       // When readystate changes
@@ -14,7 +19,7 @@ xhr.onload = function() {                       // When readystate changes
     for (var i = 0; i < responseObject.events.length; i++) { // Loop through object
       newContent += '<div class="event">';
       newContent += '<img src="' + responseObject.events[i].map + '" ';
-      newContent += 'alt="' + responseObject.events[i].location + '" />';
+      newContent += 'alt="' + responseObject.events[i].location + '"width="270" height="270" />';
       newContent += '<p><b>' + responseObject.events[i].location + '</b><br>';
       newContent += responseObject.events[i].date + '</p>';
       newContent += '</div>';
@@ -25,6 +30,11 @@ xhr.onload = function() {                       // When readystate changes
 
   }
 };
+
+//new data location input below.
+
+xhr.open('GET', 'https://barrycumbie.github.io/cis-376/scripts/dev10-data.json', true);        // Prepare the request
+xhr.send(null);                                 //send the request
 
 xhr.open('GET', 'data/data.json', true);        // Prepare the request
 xhr.send(null);                                 // Send the request
