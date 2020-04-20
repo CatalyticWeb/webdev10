@@ -65,6 +65,9 @@ nav a:hover, a.current {
 
 a {text-decoration: none; color: #000;}
 
+h2.repo {
+  color: blue;}
+
 .third, .event {
   width: 320px;
   float: left;
