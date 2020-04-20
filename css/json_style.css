@@ -76,6 +76,8 @@ h2.repo {
 .event p {border-right: 1px solid #999; }
 #content .event:last-child p {border-right: none;}
 
+#UNAcontent .event:last-child p {border-right: none;}
+
 .third p {
   padding: 0 20px 0 20px;
   margin: 40px 0 20px 0;
