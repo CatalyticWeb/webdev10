@@ -18,7 +18,7 @@ xhr.onload = function() {                       // When readystate changes
     }
 
     // Update the page with the new content
-    document.getElementById('content').innerHTML = newContent;
+    document.getElementById('UNAcontent').innerHTML = newContent;
 
   }
 };
