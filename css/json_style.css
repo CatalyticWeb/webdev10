@@ -36,6 +36,12 @@ h2 {
   line-height: 1em;
   letter-spacing: -.06em;}
 
+.name {
+  padding-left: 10px;}
+
+.repo {
+  color: blue;}
+
 h3 {
   margin: 0;
   font-size: 1.4em;
