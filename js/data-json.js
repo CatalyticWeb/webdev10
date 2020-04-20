@@ -30,7 +30,7 @@ xhrUNA.onload = function() {                       // When readystate changes
 xhrUNA.send(null);                                 //send the request
 
 //second request here
-var xhr1 = new XMLHttpRequest();
+var xhr = new XMLHttpRequest();
 
 xhr.open('GET', 'data/data.json', true);        // Prepare the request
 
