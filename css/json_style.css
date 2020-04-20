@@ -37,10 +37,12 @@ h2 {
   letter-spacing: -.06em;}
 
 .name {
-  padding-left: 10px;}
+  padding-left: 10px;
+    text-align: right;}
 
 .repo {
-  color: blue;}
+  color: blue;
+  text-align: right;}
 
 h3 {
   margin: 0;
