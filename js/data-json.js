@@ -1,12 +1,14 @@
 
-var xhr = new XMLHttpRequest();                 // Create XMLHttpRequest object
 
-xhr.open('GET', 'https://barrycumbie.github.io/cis-376/scripts/dev10-data.json', true);        // Prepare the request
 
-xhr.onload = function() {                       // When readystate changes
+var xhrUNA = new XMLHttpRequest();                 // Create XMLHttpRequest object
+
+xhrUNA.open('GET', 'https://barrycumbie.github.io/cis-376/scripts/dev10-data.json', true);        // Prepare the request
+
+xhrUNA.onload = function() {                       // When readystate changes
   // The following conditional check will not work locally - only on a server
-  if(xhr.status === 200) {                      // If server status was ok
-    responseObject = JSON.parse(xhr.responseText);
+  if(xhrUNA.status === 200) {                      // If server status was ok
+    responseObject = JSON.parse(xhrUNA.responseText);
 
     // BUILD UP STRING WITH NEW CONTENT (could also use DOM manipulation)
     var newContent = '';
@@ -25,10 +27,10 @@ xhr.onload = function() {                       // When readystate changes
   }
 };
 
-xhr.send(null);                                 //send the request
+xhrUNA.send(null);                                 //send the request
 
 //second request here
-var xhr = new XMLHttpRequest();
+var xhr1 = new XMLHttpRequest();
 
 xhr.open('GET', 'data/data.json', true);        // Prepare the request
 
