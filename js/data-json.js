@@ -28,8 +28,8 @@ xhr.onload = function() {                       // When readystate changes
 xhr.open('GET', 'https://barrycumbie.github.io/cis-376/scripts/dev10-data.json', true);        // Prepare the request
 xhr.send(null);                                 //send the request
 
-xhr.open('GET', 'data/data.json', true);        // Prepare the request
-xhr.send(null);                                 // Send the request
+//xhr.open('GET', 'data/data.json', true);        // Prepare the request
+//xhr.send(null);                                 // Send the request
 
 // When working locally in Firefox, you may see an error saying that the JSON is not well-formed.
 // This is because Firefox is not reading the correct MIME type (and it can safely be ignored).
